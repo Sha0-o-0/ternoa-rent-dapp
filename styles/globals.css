@@ -1,0 +1,212 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: beige;
+  background-color: darkslategrey;
+}
+
+.main-top {
+  margin: 30px 0;
+}
+
+.main-top button {
+  padding: 10px;
+  font-size: large;
+}
+
+.nft-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nft-wrapper .nft {
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nft-wrapper .nft img {
+  border-radius: 8px;
+}
+
+.modal-main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  inset: 0;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+
+}
+
+.modal-top {
+  position: fixed;
+  flex-wrap: wrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: darkslategrey;
+  padding: 30px;
+  font-size: smaller;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  font-size: larger;
+}
+
+.modal-top .title {
+  margin-bottom: 30px;
+}
+
+button {
+  margin-top: 5px;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  background-color: burlywood;
+}
+
+button:hover {
+  color: burlywood;
+  background-color: black;
+}
+
+.button-refresh {
+  display: flex;
+  justify-content: center;
+}
+
+.button-batch button {
+  padding: 15px;
+  font-size: large;
+  color: rgb(58, 58, 58);
+  background-color: #d4d4d4;
+  font-weight: bold;
+}
+
+.button-batch button:hover {
+  padding: 15px;
+  font-size: large;
+  color: burlywood;
+  background-color: #000000;
+}
+
+.disabled {
+  background-color: rgb(207, 207, 207);
+}
+
+.visit-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.visit {
+  border: 2px solid transparent;
+  border-image: linear-gradient(360deg, #0cc0df, #001e3f) 1;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #313b43;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  text-align: center;
+}
+
+.visit svg {
+  padding-left: 5px;
+}
+
+.wallet-polka-main {
+  height: 100%;
+  max-height: 500px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.wallet-polka {
+  width: 100%;
+  background-color: #0cc0df;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.red-color {
+  color: rgba(255, 0, 0, 0.774);
+}
+
+.orange-color {
+  color: rgba(255, 149, 0, 0.774);
+}
+
+.green-color {
+  color: rgba(30, 255, 0, 0.696);
+}
+
+
+@media (max-width: 768px) {
+
+  .nft-wrapper .nft {
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nft-wrapper .nft img {
+    border-radius: 6px;
+  }
+
+}
