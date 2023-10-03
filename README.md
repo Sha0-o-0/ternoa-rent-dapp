@@ -28,7 +28,9 @@ Go to https://rent-dapp.capstools.app/
 
 ## Run it yourself
 
-Configure .env file
+Create .env file and add variables as shown in "Env variables"
+
+Then :
 
 ```bash
 npm install
